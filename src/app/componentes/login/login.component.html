@@ -1,0 +1,32 @@
+<div id="login">
+  <div class="titulo"><h1>Iniciar sesión</h1></div>
+  <form [formGroup]="form" (ngSubmit)="onEnviar($event)" class="formlogin">
+      <div class="mb-3">
+        <label for="username" class="form-label" id="emaillbl">Nombre de usuario</label>
+        <input formControlName="username" type="username" class="form-control" id="username" aria-describedby="emailHelp">
+        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+      </div>
+      <div *ngIf="Username?.errors  && Username?.touched">    
+        <div *ngIf="Username?.hasError('required')" class="alert alert-danger" role="alert">
+          El nombre de usuario es requerido
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label" id="passlbl">Contraseña</label>
+        <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div *ngIf="Password?.errors  && Password?.touched">
+        <div class="alert alert-danger" role="alert" *ngIf="Password?.hasError('required')">
+          El password es requerido
+        </div>
+      <!-- <p *ngIf="Password?.errors?.minLength" class="error">
+      El password debe ser de 8 o más caracteres.
+      </p> -->
+      </div>
+      <!-- <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div> -->
+      <button type="submit" class="btn btn-primary" id="loginbtn">Iniciar sesión</button>
+  </form> 
+</div>

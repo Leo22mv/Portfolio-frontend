@@ -1,0 +1,19 @@
+<div id="banner" style="background-image: url('assets/img/PortadaEditada.png');">
+  <router-outlet></router-outlet>
+    <div class="card mb-3" style="width: 540px;" id="info">
+      <div class="row">
+        <div class="col-md-4">
+          <app-foto-perfil></app-foto-perfil>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <app-nombre-editable class="inline"></app-nombre-editable>
+            <app-edit-nombre class="inline" id="editnombre"></app-edit-nombre>
+            <app-titulo></app-titulo>
+            <!-- <a href="#" class="editbtn"><img src="../assets/img/editar.png" width="15px"></a> -->
+            <app-ubicacion></app-ubicacion>
+            <!-- <a href="#" class="editbtn"><img src="../assets/img/editar.png" width="15px"></a> -->
+          </div>
+        </div>
+      </div>
+  </div>

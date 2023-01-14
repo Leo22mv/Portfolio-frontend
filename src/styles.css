@@ -1,0 +1,97 @@
+/* You can add global styles to this file, and also import other style files */
+.editbtn3 {
+    cursor: pointer;
+}
+.editbtn2 {
+    margin-left: 100%;
+    cursor: pointer;
+    visibility: hidden;
+}
+.editbtn {
+    cursor: pointer;
+    visibility: hidden;
+}
+.error {
+    color: red;
+}
+.inpnombre {
+    /* display: none; */
+    cursor: pointer;
+}
+#tilnombre {
+    /* display: none; */
+    cursor: pointer;
+}
+.tilde {
+    margin-left: 10px;
+}
+#logo {
+    margin-bottom: 5px;
+}
+#banner {
+    margin: 80px 0 20px 0;
+    border-radius: 30px;
+    border: 2px solid black;
+    background-size: 80%;
+    background-position: 35%;
+    height: 400px;
+    padding: 14% 0 0 1%;
+}
+#editban {
+    margin: 80px 0 0 100%;
+}
+#info {
+    /* position: absolute; */
+    /* top: 25px; */
+    /* bottom: 100%; */
+    /* left: 1%; */
+    border-radius: 100px;
+}
+#fotoperfil {
+    border-radius: 100px;
+    /* max-width: 340px; */
+    /* border-bottom-left-radius: 100px; */
+}
+.card-header {
+    background-color: #018786;
+    color: white;
+}
+.formlogin {
+    width: 40%;
+    /* margin:25px auto; */
+    margin-top: 25px;
+}
+#sobremi {
+    margin-bottom: 30px;
+}
+.card {
+    margin-bottom: 30px;
+}
+#html {
+    background-image: url("assets/img/90.png");
+    background-size: 100%;
+    background-position: 0 30%;
+    background-repeat: no-repeat;
+}
+.skill {
+    border: 1px solid black;
+    width: 10%;
+    height: 20%;
+    margin: 55% 0 0 36%;
+    
+}
+#error404 {
+    margin-top: 75px;
+}
+.titulo {
+    margin-top:75px;
+}
+#passlbl, #loginbtn, #emaillbl {
+    /* margin: 0px auto; */
+}
+.inline {
+    display: inline-block;
+}
+#editnombre {
+    margin-left: 5px;
+}

@@ -1,0 +1,19 @@
+<div id="banner" style="background-image: url('assets/img/PortadaEditada.png');">
+    <div class="card mb-3" style="width: 540px;" id="info">
+      <div class="row">
+        <div class="col-md-4">
+          <app-foto-perfil></app-foto-perfil>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <app-nombre class="inline" [puedeEditar]="puedeEditar" [estaEditandoNombre]="estaEditandoNombre" *ngIf="!estaEditandoNombre" [nombre]="nombre"></app-nombre>
+            <app-edit-nombre *ngIf="puedeEditar&&!estaEditandoNombre" (emiter)="mostrarInput($event)"></app-edit-nombre>
+
+            <app-input-nombre *ngIf="estaEditandoNombre" (booleanEmiter)="mostrarInput($event)" (nombreEmiter)="editarNombre($event)"></app-input-nombre>
+            
+            <app-titulo></app-titulo>
+            <app-ubicacion></app-ubicacion>
+          </div>
+        </div>
+      </div>
+  </div>
