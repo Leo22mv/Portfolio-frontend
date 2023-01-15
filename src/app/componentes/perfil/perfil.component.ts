@@ -13,6 +13,11 @@ export class PerfilComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    if (localStorage.getItem("token")) {
+      this.puedeEditar = true;
+    } else {
+      this.puedeEditar = false;
+    }
   }
   
 }
