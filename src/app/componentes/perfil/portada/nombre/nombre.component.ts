@@ -10,7 +10,7 @@ export class NombreComponent implements OnInit {
   @Input() puedeEditar: boolean | undefined;
   @Input() estaEditandoNombre: boolean | undefined;
 
-  @Input() nombre: string | undefined;
+  @Input() nombre: string = "Leonel Martinez";
 
   constructor() { }
 

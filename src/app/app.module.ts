@@ -28,6 +28,7 @@ import { PerfilEditableComponent } from './componentes/perfil-editable/perfil-ed
 import { PortadaEditableComponent } from './componentes/perfil-editable/portada-editable/portada-editable.component';
 import { NombreEditableComponent } from './componentes/perfil-editable/portada-editable/nombre-editable/nombre-editable.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LogindropComponent } from './componentes/header/logindrop/logindrop.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FotoPortadaComponent,
     PerfilEditableComponent,
     PortadaEditableComponent,
-    NombreEditableComponent
+    NombreEditableComponent,
+    LogindropComponent
   ],
   imports: [
     BrowserModule,

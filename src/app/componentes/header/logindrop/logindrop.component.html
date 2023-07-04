@@ -1,0 +1,29 @@
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <img id="logo" src="../assets/img/login.png" alt="Login" width="24" height="24">
+    </button>
+    <div class="dropdown-menu dropdown-menu-end">
+      <form class="px-4 py-3" (ngSubmit)="onClick()">
+        <div class="mb-3">
+          <label for="usernamelogin" class="form-label">Nombre de usuario</label>
+          <input [(ngModel)]="user.username" type="text" class="form-control" id="usernamelogin" placeholder="Usuario">
+        </div>
+        <div class="mb-3">
+          <label for="exampleDropdownFormPassword1" class="form-label">Contraseña</label>
+          <input [(ngModel)]="user.password" type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Contraseña">
+        </div>
+        <!-- <div class="mb-3">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+            <label class="form-check-label" for="dropdownCheck">
+              Remember me
+            </label>
+          </div>
+        </div> -->
+        <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+      </form>
+      <!-- <div class="dropdown-divider" ngClass="hidden"></div> -->
+      <a class="dropdown-item" href="#" ngClass="hidden">New around here? Sign up</a>
+      <!-- <a class="dropdown-item" href="#" ngClass="hidden">Forgot password?</a> -->
+    </div>
+  </div>

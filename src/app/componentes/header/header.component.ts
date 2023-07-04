@@ -3,6 +3,8 @@ import { Location } from '@angular/common';
 import { Router, RouterLink } from '@angular/router';
 import { PortfolioService } from 'src/app/services/portfolioService/portfolio.service';
 import { AuthService } from 'src/app/auth.service';
+import { IUsuario } from 'src/app/models/iusuario.interface';
+import { LoginService } from 'src/app/services/login.service';
 
 @Component({
   selector: 'app-header',
@@ -20,33 +22,37 @@ export class HeaderComponent implements OnInit {
 
   // authService: AuthService = new AuthService(this.routerr);
 
-  loginVisible: boolean = false;
+  // loginVisible: boolean = false;
 
-  constructor(private router: Router, private authService: AuthService) {}
+  constructor(private router: Router, private authService: AuthService, private loginservice: LoginService) {}
 
   ngOnInit(): void {  
   }
 
 
   onClick() {
-    if (this.loginVisible) {
-      this.router.navigateByUrl("inicio");
-    } else {
-      this.router.navigateByUrl("login");
-    }
-    this.cambiarLogin();
+    // if (this.authService.) {
+    //   this.router.navigateByUrl("inicio");
+    // } else {
+    //   this.router.navigateByUrl("login");
+    // }
+    // this.cambiarLogin();
+
+    // this.loginservice.loginUser(this.user).subscribe(data => {
+    //   window.location.href = "/portfolio"
+    // }, error => alert("Usuario o contraseña incorrectos"))
   }
 
-  cambiarLogin () {
-    this.loginVisible = !this.loginVisible
-  }
+  // cambiarLogin () {
+  //   this.loginVisible = !this.loginVisible
+  // }
   
-  cambiarLoginFalse() {
-    this.loginVisible = false;
-  }
+  // cambiarLoginFalse() {
+  //   this.loginVisible = false;
+  // }
 
   logout() {
     this.authService.logout();
-    this.router.navigate(["login"]);
+    // this.router.navigate(["login"]);
   }
 }

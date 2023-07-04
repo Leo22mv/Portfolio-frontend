@@ -1,3 +1,6 @@
 .navbar-brand {
     cursor: pointer;
 }
+.hidden {
+    visibility: hidden;
+}

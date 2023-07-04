@@ -4,7 +4,7 @@
       <!-- <nav class="navbar fixed-top navbar-expand-md" style="background-color: #03DAC6;"> -->
       <!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark"> -->
         <div class="container-fluid">
-            <a class="navbar-brand" routerLink="/inicio" style="color: white;" (click)="cambiarLoginFalse()">
+            <a class="navbar-brand" routerLink="/inicio" style="color: white;">
                 <img id="logo" src="../assets/img/Sin título-1.png" alt="" width="30" height="24">
                 Argentina Programa - #YoProgramo
             </a>
@@ -41,9 +41,10 @@
               <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form> -->
           <!-- </div> -->
-          <a *ngIf="!isLogged" class="navbar-brand" (click)="onClick()">
+          <!-- <a *ngIf="!isLogged" class="navbar-brand" (click)="onClick()">
             <img id="logo" src="../assets/img/login.png" alt="" width="24" height="24">
-        </a>
+        </a> -->
+        <app-logindrop></app-logindrop>
         <a *ngIf="isLogged" class="navbar-brand" (click)="logout()">
           logout
       </a>
